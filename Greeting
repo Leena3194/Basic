@@ -1,0 +1,17 @@
+def time(a):
+    import datetime as Time
+    Hour = Time.datetime.now().hour
+    if Hour < 12:
+        print("Hi " +a+ " Good Morning")
+    elif Hour == 12:
+        print("Hi " +a+ "Good day")
+    elif Hour > 12 and Hour < 16:
+        print("Hi " +a+ " Good afternoon")
+    elif Hour >= 16 and Hour < 24:
+        print("Hi " +a+ " Good evening")
+x = input("enter your first name")
+if (x.isalpha()):
+    time(x)
+else:
+    print("enter a valid name")
+
