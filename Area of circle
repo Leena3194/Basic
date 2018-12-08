@@ -1,0 +1,15 @@
+import math
+
+def radius(a):
+    radius = math.sqrt(float(a) / 3.14)
+    print("The radius is:", radius)
+
+
+try:
+    x = int(input("enter the area"))
+    if x > 0:
+        radius(x)
+    else:
+        print("enter a positive number")
+except ValueError:
+    print("enter a valid number")
