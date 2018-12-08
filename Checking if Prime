@@ -1,0 +1,17 @@
+def Prime(a):
+    k = 0
+    for i in range(2, a // 2 + 1):
+        if (a % i == 0):
+            k = k + 1
+    if (k == 0):
+        print("Number is prime")
+    else:
+        print("Number is Composite")
+try:
+    x = int(input("enter a number"))
+    if x>0:
+        Prime(x)
+    else:
+        print("enter a positive number")
+except ValueError:
+    print("enter an integer")
