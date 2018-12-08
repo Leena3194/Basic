@@ -1,12 +1,13 @@
 def NextPrime(b):
     while True:
-        b=b-1
+        b=b+1
         for i in range(2, b):
             if b % i == 0:
                 break
         else:
-             break
-    print(b, "is the previous prime number.")
+            print(b, "is the next prime number.")
+            break
+    
     exit()
 
 try:
