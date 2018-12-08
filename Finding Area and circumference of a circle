@@ -1,0 +1,38 @@
+def area(a):
+    area=3.14*float(a)*float(a)
+    print("Area:",area)
+def circumference(a):
+    cirumference=2*3.14*float(a)
+    print("Circumference:", cirumference)
+
+def inp(a):
+        choice=input("""
+                        1: Area
+                        2:Circumference
+                        3:Both
+                        select one:"""
+                     )
+
+        if choice=="1":
+            area(a)
+            exit()
+        if choice=="2":
+            circumference(a)
+            exit()
+        if choice=="3":
+            area(a)
+            circumference(a)
+            exit()
+        else:
+            print("select a number from the given option")
+            inp(a)
+
+try:
+    x = int(input("enter the radius"))
+    if x>0:
+        inp(x)
+    else:
+        print("enter a positive number")
+except ValueError:
+    print("enter a valid number")
+
