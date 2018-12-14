@@ -22,18 +22,18 @@ main()
 
 '''******************* Test Case***************************
   ------------------------------------------
-	Input	  |	output
+	Input	|	output
 	--------|---------------------------------
-	13	    | The factorial of 7 is 5040
+	13	| The factorial of 7 is 5040
 	--------|---------------------------------
-	ab	    | Enter an integer
+	ab	| Enter an integer
 	--------|---------------------------------
-	@#	    | Enter an integer
+	@#	| Enter an integer
 	--------|---------------------------------
-	0	      | Enter a positive number
+	0	| The factorial of 0 is 1
 	--------|---------------------------------
-	-3	    | Enter a positive number
+	-3	| Enter a positive number
 	--------|---------------------------------
-	2E	    | Enter an integer
+	2E	| Enter an integer
 	--------|---------------------------------
-	e05	    | Enter an integer                      '''
+	e05	| Enter an integer                      '''
