@@ -1,0 +1,39 @@
+def factorial(num):
+    factorial = 1
+    if num == 0:
+        print("The factorial of 0 is 1")
+    else:
+        for i in range(1, num + 1):
+            factorial = factorial * i
+        print("The factorial of", num, "is", factorial)
+
+def main():
+    try:
+        x=int(input("enter a number: "))
+        if x < 0:
+            print("Enter a positive integer")
+            main()
+        else:
+            factorial(x)
+    except ValueError:
+        print("enter an integer")
+        main()
+main()
+
+'''******************* Test Case***************************
+  ------------------------------------------
+	Input	  |	output
+	--------|---------------------------------
+	13	    | The factorial of 7 is 5040
+	--------|---------------------------------
+	ab	    | Enter an integer
+	--------|---------------------------------
+	@#	    | Enter an integer
+	--------|---------------------------------
+	0	      | Enter a positive number
+	--------|---------------------------------
+	-3	    | Enter a positive number
+	--------|---------------------------------
+	2E	    | Enter an integer
+	--------|---------------------------------
+	e05	    | Enter an integer                      '''
