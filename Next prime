@@ -5,16 +5,37 @@ def NextPrime(b):
             if b % i == 0:
                 break
         else:
-            print(b, "is the next prime number.")
+            return b
             break
-    
-    exit()
 
-try:
-    x = int(input("enter a number"))
-    if x>0:
-        NextPrime(x)
-    else:
-        print("enter a positive number")
-except ValueError:
-    print("enter an integer")
+def main():
+    try:
+        x = int(input("enter a number"))
+        if x>0:
+            print("the next prime is: ", NextPrime(x))
+        else:
+            print("enter a positive number")
+            main()
+    except ValueError:
+        print("enter an integer")
+        main()
+main()
+
+''' *******************************************Test Case***********************************************************
+   
+   ------------------------------------------
+	Input	|	output
+	--------|---------------------------------
+	13	    | 17
+	--------|---------------------------------
+	ab	    | Enter an integer
+	--------|---------------------------------
+	@#	    | Enter an integer
+	--------|---------------------------------
+	0	    | Enter a positive number
+	--------|---------------------------------
+	-3	    | Enter a positive number
+	--------|---------------------------------
+	2E	    | Enter an integer
+	--------|---------------------------------
+	e05	    | Enter an integer                 '''
